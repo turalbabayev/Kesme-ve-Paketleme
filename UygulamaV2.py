@@ -214,6 +214,7 @@ class PackingApp(QMainWindow):
     def initUI(self):
         self.setWindowTitle('Kesme ve Paketleme Problem Uygulaması')
         self.setGeometry(100, 100, 800, 600)
+        self.setFixedSize(800,600)
 
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
