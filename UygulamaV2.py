@@ -207,18 +207,20 @@ class PackingApp(QMainWindow):
 
         self.rectangles = []
         self.bins = []
-        self.iteration = 10
+        
 
         self.initUI()
 
     def initUI(self):
         self.setWindowTitle('Kesme ve Paketleme Problem Uygulaması')
-        self.setGeometry(100, 100, 800, 600)
-        self.setFixedSize(800,600)
+        self.setGeometry(100, 100, 1000, 800)
+        self.setFixedSize(1000,800)
 
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
 
+
+        
         layout = QVBoxLayout()
 
         
@@ -235,10 +237,7 @@ class PackingApp(QMainWindow):
         title_label.setFont(title_font)
         top_layout.addWidget(title_label)
 
-        """self.progress_bar = QProgressBar(self)
-        self.progress_bar.setMinimum(0)
-        self.progress_bar.setMaximum(self.iteration)  # İterasyon sayısı kadar maksimum değer
-        layout.addWidget(self.progress_bar)"""
+        
 
         # Butonlar
         button_layout = QHBoxLayout()
