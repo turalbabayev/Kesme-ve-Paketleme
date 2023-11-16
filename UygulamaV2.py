@@ -187,7 +187,7 @@ def genetic_algorithm(rectangles, bin_width, bin_height, population_size, iterat
     #self.progress_bar.setValue(iteration)  # İterasyon çubuğunu tam değere ayarla
     #self.progress_bar.setFormat("Genetik Algoritma Tamamlandı. Toplam Geçen Süre: {:.2f} saniye".format(time.time() - start_time))
 
-        print(f"Iterasyon {i + 1} - En iyi fitness: {best_fitness}")
+        print(f"Iterasyon No: {i + 1} - En iyi fitness: {best_fitness}")
     print("En iyi kromozom:", best_chromosome)
     print("En iyi fitness değeri:", best_fitness)
     return best_chromosome, best_fitness #En iyi kromozomu ve fitness değerini döndürme işlemi
