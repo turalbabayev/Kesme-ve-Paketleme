@@ -218,7 +218,7 @@ class PackingApp(QMainWindow):
 
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
-
+        
 
         
         layout = QVBoxLayout()
