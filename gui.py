@@ -27,7 +27,7 @@ class MyMplCanvas(FigureCanvas):
 
         self.ax.set_facecolor(main_window.palette().color(QPalette.Window).getRgbF())
         # Diğer grafik öğelerini de güncelleyin
-        self.ax.plot([0, 1, 2, 1, 0], color='blue')  # Örnek çizgi
+        #self.ax.plot([0, 1, 2, 1, 0], color='blue')  # Örnek çizgi
     
 
 class App(QMainWindow):

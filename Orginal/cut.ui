@@ -31,6 +31,10 @@
   <property name="windowTitle">
    <string>Kesme ve Paketleme Problem Arayüzü</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/WhatsApp Image 2023-11-27 at 22.01.04.jpeg</normaloff>icons/WhatsApp Image 2023-11-27 at 22.01.04.jpeg</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
@@ -142,7 +146,7 @@
         <x>10</x>
         <y>450</y>
         <width>821</width>
-        <height>171</height>
+        <height>183</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -150,6 +154,13 @@
         <widget class="QTextEdit" name="textBoxMessage">
          <property name="placeholderText">
           <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBar">
+         <property name="value">
+          <number>0</number>
          </property>
         </widget>
        </item>
@@ -210,13 +221,13 @@ image: url(:/newPrefix/plus_50px.png);</string>
           <string>Veri Seç</string>
          </property>
          <property name="icon">
-          <iconset resource="TemplateUI/icons/icons.qrc">
-           <normaloff>:/newPrefix/plus_50px.png</normaloff>:/newPrefix/plus_50px.png</iconset>
+          <iconset>
+           <normaloff>icons/plus_50px.png</normaloff>icons/plus_50px.png</iconset>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btnSVGKaydet">
+        <widget class="QPushButton" name="btnSaveSVG">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -225,6 +236,10 @@ image: url(:/newPrefix/plus_50px.png);</string>
          </property>
          <property name="text">
           <string>SVG Olarak Kaydet</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icons/mms_50px.png</normaloff>icons/mms_50px.png</iconset>
          </property>
         </widget>
        </item>
@@ -239,7 +254,73 @@ image: url(:/newPrefix/plus_50px.png);</string>
          <property name="text">
           <string>Sonuçları Görüntüle</string>
          </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icons/eye.png</normaloff>icons/eye.png</iconset>
+         </property>
         </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Sonuçlar</string>
+     </attribute>
+     <widget class="QListWidget" name="listWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>821</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblIslem_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Sonuçlar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="showResult">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>30</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sonuç Göster</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>821</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QWidget" name="matplotlib_2" native="true"/>
        </item>
       </layout>
      </widget>
@@ -264,7 +345,7 @@ image: url(:/newPrefix/plus_50px.png);</string>
   </widget>
  </widget>
  <resources>
-  <include location="TemplateUI/icons/icons.qrc"/>
+  <include location="../TemplateUI/icons/icons.qrc"/>
  </resources>
  <connections/>
 </ui>
