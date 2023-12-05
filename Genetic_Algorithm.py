@@ -183,7 +183,7 @@ def genetic_algorithm(rectangles, bin_width, bin_height, population_size, iterat
     
 if __name__ == "__main__":
     rectangles = []
-    with open("C2_1.txt", "r") as file:
+    with open("Data/C2_1.txt", "r") as file:
         num_rectangles = int(file.readline().strip())
         bin_width, bin_height = map(int, file.readline().strip().split())
 

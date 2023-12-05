@@ -40,6 +40,7 @@ class Bin:
     def add_rectangle(self, rectangle):
         self.rectangles.append(rectangle)
         self.fitness += rectangle.width * rectangle.height #Yerleştirilen dikdörtgenin alanını fitness değerine ekleme işlemi
+
 def is_valid_location(bin, rect, x, y):
     if x + rect.width > bin.width or y + rect.height > bin.height:
         return False
